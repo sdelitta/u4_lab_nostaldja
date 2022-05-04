@@ -1,0 +1,10 @@
+{% extends 'nostalgia/base.html' %} {% block content %}
+<h2>Decades <a href="">(+)</a></h2>
+<ul>
+  {% for decade in decades %}
+  <li>
+    <a href="{% url 'decade_detail' pk=decade.pk %}">{{ decade.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

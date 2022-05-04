@@ -1,0 +1,10 @@
+{% extends 'nostalgia/base.html' %} {% block content %}
+<h2>Fads <a href="">(+)</a></h2>
+<ul>
+  {% for fad in fads %}
+  <li>
+    <a href="{% url 'fad_detail' pk=fad.pk %}">{{ fad.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

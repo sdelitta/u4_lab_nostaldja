@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+  <head>
+    <title>Nostalgia</title>
+    <link rel="stylesheet" href="{% static 'css/nostalgia.css' %}" />
+  </head>
+  <body>
+    <h1>N0$t@|g!a</h1>
+    <nav>
+      <a href="/fads">Fads</a>
+      <a href="/">Decades</a>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{% extends 'nostalgia/base.html' %} {% block content %}
+<h2>{{ fad.name }} <a href="">(edit)</a></h2>
+<h3>By: {{ fad.decade.start_year }}</h3>
+
+<h3> YouTube Link: </h3>
+Description: {{ fad.description }}
+{% endblock %}
